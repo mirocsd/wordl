@@ -14,9 +14,9 @@ void setColour(const char *colour) {
 
 void printColored(char *guess, char *actual) {
 	int strlength = strlen(actual);
-	char temp[13];
-	int arr[13] = {0};
-	int found[13] = {0};
+	char temp[34];
+	int arr[34] = {0};
+	int found[34] = {0};
 	strcpy(temp, actual);
 
 	for (int i=0; i<strlength; i++) {
@@ -63,10 +63,10 @@ int main(int argc, char *argv[]) {
 		printf("Invalid number of command line arguments\n");
 		return 1;
 	}
-	char to_find[13];
+	char to_find[34];
 	strcpy(to_find, argv[1]);
 
-	char str[13];
+	char str[34];
 	int i = 0;
 	int max_guesses = 6;
 
